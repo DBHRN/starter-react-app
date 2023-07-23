@@ -5,11 +5,11 @@
   "type": "module",
   "homepage": "https://dbhrn.github.io/happycompany",
   "scripts": {
+    "start": "npm run dev",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "start": "npm run dev"
+    "preview": "vite preview"
   },
   "dependencies": {
     "axios": "^1.4.0",
