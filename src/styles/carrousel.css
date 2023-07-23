@@ -1,0 +1,142 @@
+.carrousel__container {
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(84,84,84,1) 100%);
+    box-sizing: border-box;
+    position: static;
+    margin-top: 0.5rem;
+    align-items: center;
+    right:0;
+    left:0;
+}
+.wrapper{
+    display: flex;
+    max-width: 100%;
+}
+.wrapper i {
+    position: absolute;
+    height: calc(500px);
+    width: 44px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.15rem;
+    text-align: center;
+    justify-self: center;
+    justify-content: center;
+    line-height: 44px;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+    border: 1px solid rgba(255, 255, 255, 0.849);
+    padding: 17% 0 0 0;
+    transition: transform 0.1s linear;
+    
+}
+#left {
+    left: 0px;
+}
+#right {
+    right: 0px;
+}
+.wrapper i:active{
+    background: rgba(0,0,0,50%);
+}
+.wrapper i:hover{
+    background: rgba(0,0,0,50%);
+}
+.wrapper i:first-child{
+    left: -22px;
+    display: none;
+}
+.wrapper i:last-child{
+    right: -22px;
+}
+.wrapper .carousel{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+.carousel {
+    width: 100%;
+}
+.carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel.dragging article{
+    pointer-events: none;
+}
+.carousel article{
+    display: inline-block;
+    height: 500px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 14px;
+    width: calc(100%);
+}
+.carousel article:first-child{
+    margin-left: 0px;
+}
+.carousel.dragging span{
+    pointer-events: none;
+}
+.carousel span{
+    display: inline-block;
+    height: 500px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 14px;
+    width: calc(100%);
+}
+#carrousel__item-image-1{
+    margin-left: 0px;
+
+}
+
+#carrousel__item-image-1 {
+    background: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))),url(../assets/working_with_kids.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+}
+#carrousel__item-image-2 {
+    background: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))),url(../assets/mom_and_daughter.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+}
+#carrousel__item-image-3 {
+    background: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))),url(../assets/kids_playing_worm_toy.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+}
+.carrousel__item-image {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+}
+.carrousel__item-text-container {
+    position: absolute;
+    width: 70%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+.carrousel__item-text {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 17%;
+    word-wrap: break-word;
+}
